@@ -1,33 +1,6 @@
 # 🔐 パスワードメーカー
 
-<div class="project-content">
-    <h3>パスワードメーカー</h3>
-    <p>安全で使いやすいパスワード生成ツール。カスタマイズ可能なパスワード生成・強度評価・履歴管理で、セキュアなパスワード作成を実現。</p>
-    <div class="project-demo">
-        <a href="password_generator_web.html" class="demo-link" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-key"></i><span>アプリを試す</span>
-        </a>
-    </div>
-    <div class="project-details">
-        <div class="project-tech"><h4>使用技術</h4><p>Python 3.13.6, tkinter, HTML/CSS/JavaScript</p></div>
-        <div class="project-features">
-            <h4>主な機能</h4>
-            <ul>
-                <li>カスタマイズ可能なパスワード生成</li>
-                <li>パスワード強度の評価システム</li>
-                <li>クリップボードへのワンクリックコピー</li>
-                <li>パスワード履歴の保存と管理</li>
-                <li>GUI版とコマンドライン版の両方を提供</li>
-                <li>Web版デモ（ブラウザ上で動作）</li>
-                <li>文字種の選択（大文字・小文字・数字・記号）</li>
-                <li>パスワード長のカスタマイズ</li>
-            </ul>
-        </div>
-    </div>
-    <div class="project-tags"><span>Python</span><span>tkinter</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-</div>
-
-安全で使いやすいパスワードメーカーをPythonで開発しました。GUI版とコマンドライン版の両方を提供し、標準ライブラリのみで動作する軽量なアプリケーションです。
+安全で使いやすいパスワード生成ツール。カスタマイズ可能なパスワード生成・強度評価・履歴管理で、セキュアなパスワード作成を実現。
 
 ## 🎯 主な機能
 
@@ -36,6 +9,9 @@
 - 📋 クリップボードへのワンクリックコピー
 - 📚 パスワード履歴の保存と管理
 - 🖥️ GUI版とコマンドライン版の両方を提供
+- 🌐 Web版デモ（ブラウザ上で動作）
+- 🔤 文字種の選択（大文字・小文字・数字・記号）
+- 📏 パスワード長のカスタマイズ
 
 ## 🛠️ 技術スタック
 
@@ -48,34 +24,29 @@
 - **os** - ファイル操作
 - **datetime** - タイムスタンプ
 
-## 📋 前提条件
+## 🚀 クイックスタート
 
-### Pythonのインストール
-
-1. **Python 3.13.6以上**をインストールしてください
-   - [Python公式サイト](https://www.python.org/downloads/)からダウンロード
-   - インストール時に「Add Python to PATH」にチェックを入れてください
-
-2. **インストール確認**
-   ```bash
-   python --version
-   # または
-   python3 --version
-   ```
-
-## 🚀 インストール
-
-1. リポジトリをクローンまたはダウンロード
-2. プロジェクトディレクトリに移動
-3. 標準ライブラリのみで動作するため、追加の依存関係は不要
+### 1. リポジトリのクローン
 
 ```bash
-# リポジトリをクローン
 git clone https://github.com/yourusername/password-maker.git
 cd password-maker
-
-# または、ZIPファイルをダウンロードして解凍
 ```
+
+### 2. アプリケーションの実行
+
+**GUI版（推奨）：**
+```bash
+python password_generator.py
+```
+
+**コマンドライン版：**
+```bash
+python password_generator_cli.py
+```
+
+**Web版デモ：**
+ブラウザで `password_generator_web.html` を開く
 
 ## 📖 使用方法
 
