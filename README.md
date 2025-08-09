@@ -2,6 +2,12 @@
 
 安全で使いやすいパスワード生成ツール。カスタマイズ可能なパスワード生成・強度評価・履歴管理で、セキュアなパスワード作成を実現。
 
+## 🌐 ライブデモ
+
+**[🔗 パスワードメーカーを試す](https://hamada-shinichiro9351.github.io/password-maker/)**
+
+GitHub PagesでホストされているWeb版デモです。ブラウザ上でパスワード生成、強度評価、コピー機能をお試しください。
+
 ## 🎯 主な機能
 
 - 🔐 カスタマイズ可能なパスワード生成
@@ -46,7 +52,8 @@ python password_generator_cli.py
 ```
 
 **Web版デモ：**
-ブラウザで `password_generator_web.html` を開く
+- ブラウザで `index.html` を開く
+- または [GitHub Pages](https://hamada-shinichiro9351.github.io/password-maker/) にアクセス
 
 ## 📖 使用方法
 
@@ -114,15 +121,18 @@ python password_generator_cli.py --show-strength
 
 プロジェクトにはWeb版のデモも含まれています：
 
-- **ファイル**: `password_generator_web.html`
+- **ファイル**: `index.html`
 - **機能**: ブラウザ上でパスワード生成、強度評価、コピー機能
-- **アクセス**: ブラウザで `password_generator_web.html` を開く
+- **アクセス**: 
+  - ローカル: ブラウザで `index.html` を開く
+  - オンライン: [GitHub Pages](https://hamada-shinichiro9351.github.io/password-maker/)
 
 ## 📁 プロジェクト構造
 
 ```
 password-maker/
-├── password_generator_web.html    # Web版デモ
+├── index.html                     # Web版デモ（GitHub Pages用）
+├── password_generator_web.html    # Web版デモ（元ファイル）
 ├── password_generator.py          # GUI版メインアプリケーション
 ├── password_generator_cli.py      # コマンドライン版
 ├── test_password_generator.py     # テストスクリプト
@@ -174,31 +184,24 @@ python test_password_generator.py
 
 ## 🚀 デプロイ
 
-### GitHub Pages + Netlify連携
+### GitHub Pages
 
-1. **GitHubリポジトリ作成**
-   - リポジトリ名: `password-maker`
-   - Public設定
+このプロジェクトはGitHub Pagesでホストされています：
 
-2. **ファイルアップロード**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Password Maker project"
-   git branch -M main
-   git remote add origin https://github.com/yourusername/password-maker.git
-   git push -u origin main
-   ```
+- **URL**: https://hamada-shinichiro9351.github.io/password-maker/
+- **ファイル**: `index.html`がメインページとして表示されます
 
-3. **Netlify連携**
-   - Netlifyダッシュボードで `New site from Git`
-   - GitHubリポジトリを選択
-   - 自動デプロイ設定
+### ローカルデプロイ
 
-4. **アクセスURL**
-   ```
-   https://your-site-name.netlify.app/password_generator_web.html
-   ```
+1. リポジトリをクローン
+2. `index.html`をブラウザで開く
+3. または、ローカルサーバーを起動
+
+```bash
+# Pythonの簡易サーバーを使用
+python -m http.server 8000
+# ブラウザで http://localhost:8000 にアクセス
+```
 
 ## 📞 サポート
 
